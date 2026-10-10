@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>八一班</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:#fff;color:#111;padding:24px;text-align:center}
+.title{font-size:17px;font-weight:600;margin-bottom:10px;letter-spacing:-.2px}
+.url{font-size:15px;color:#111;text-decoration:underline;word-break:break-all;line-height:1.5}
+.small{font-size:12.5px;color:#999;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="title">八一班已迁移到新地址</div>
+<a class="url" id="newurl"></a>
+<div class="small">正在跳转...</div>
+<script>
+var NEW='https://81class.cc.cd';
+document.getElementById('newurl').textContent=NEW;
+document.getElementById('newurl').href=NEW;
+setTimeout(function(){location.href=NEW},900);
+</script>
+</body>
+</html>
